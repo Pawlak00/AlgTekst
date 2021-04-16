@@ -3,8 +3,9 @@ from static_huffman import *
 from bitarray import bitarray
 from os.path import getsize 
 from time import perf_counter
+from tabulate import tabulate
+import numpy as np
 class huff_compression():
-    """docstring for huff_compressed"""
     def __init__(self, text=None):
         self.text=text
         self.code=None
@@ -20,7 +21,6 @@ class huff_compression():
             self.static=static_huffman()
             self.code=self.static.generate_code(self.text) 
     def save_compressed_to_file(self,file_name):
-        # print(self.code)
         res=bitarray()
         for v in self.text:
             res.extend(self.code[v])
@@ -69,43 +69,69 @@ class huff_compression():
             for l in lines:
                 res+=l
             self.text=res
-# '1kB','10kB','100kB','1MB','gutenberg'
-raw_text_files= ['1kB','10kB','100kB','1MB','gutenberg1kB','gutenberg10kB','gutenberg100kB','gutenberg1MB',
-                    'github1kB','github10kB','github100kB','github1MB']
+raw_text_files= [['1kB','10kB','100kB','1MB'],['gutenberg1kB','gutenberg10kB','gutenberg100kB','gutenberg1MB'],
+                    ['github1kB','github10kB','github100kB','github1MB']]
 static_compressed='static.huf'
 adaptive_compressed='adaptive.huf'
-# raw_text_file='gutenberg'
-# comp=huff_compression()
-# comp.read_from_raw_file(raw_text_file)
-# comp.compress('static')
-# comp.save_compressed_to_file(adaptive_compressed)
-# print(comp.read_compressed_file(adaptive_compressed))
-for raw_text_file in raw_text_files:
-    comp=huff_compression()
-    comp.read_from_raw_file(raw_text_file)
-    s_t0=perf_counter()
-    comp.compress('static')
-    s_t1=perf_counter()
-    comp.save_compressed_to_file(static_compressed)
-    a_t0=perf_counter()
-    comp.compress('dynamic')
-    a_t1=perf_counter()
-    comp.save_compressed_to_file(adaptive_compressed)
-    print('OK' if comp.read_compressed_file(adaptive_compressed)==True else 'ERROR',
-        raw_text_file,
-        'static encode time ',round(s_t1-s_t0,3),
-        'adaptive endoce time',round(a_t1-a_t0,3))
-    se_t0=perf_counter()
-    comp.read_compressed_file(static_compressed)
-    se_t1=perf_counter()
-    ae_t0=perf_counter()
-    comp.read_compressed_file(adaptive_compressed)
-    ae_t1=perf_counter()
-    print('static decode: ',round(se_t1-se_t0,3),'adaptive decode: ',round(ae_t1-ae_t0,3))
-    print('text file size',raw_text_file,' ',
-        getsize(raw_text_file),' static ',
-        getsize(static_compressed),' adaptive ',
-        getsize(adaptive_compressed),' adaptive ratio ',
-        round((1-getsize(adaptive_compressed)/getsize(raw_text_file))*100,2),
-        ' static ratio ',round((1-getsize(static_compressed)/getsize(raw_text_file))*100,2))
-    print('\n')
+times_encode_adaptive=[[],[],[]]
+times_decode_adaptive=[[],[],[]]
+times_encode_static=[[],[],[]]
+times_decode_static=[[],[],[]]
+compress_coef_adapt=[[],[],[]]
+compress_coef_stat=[[],[],[]]
+for i in range(len(raw_text_files)):
+    for raw_text_file in raw_text_files[i]:
+        comp=huff_compression()
+        comp.read_from_raw_file(raw_text_file)
+        # measure static encode time
+        static_comp_start=perf_counter()
+        comp.compress('static')
+        static_comp_end=perf_counter()
+        # save static encode to file
+        comp.save_compressed_to_file(static_compressed)
+        # measure static decode
+        static_read_start=perf_counter()
+        comp.read_compressed_file(static_compressed)
+        static_read_end=perf_counter()
+        comp.code=None
+        # measure dynamic encode
+        dyn_comp_start=perf_counter()
+        comp.compress('dynamic')
+        dyn_comp_end=perf_counter()
+        # save dynamic encode to file
+        comp.save_compressed_to_file(adaptive_compressed)
+        # measure dynamic decode
+        dyn_read_start=perf_counter()
+        comp.read_compressed_file(adaptive_compressed)
+        dyn_read_end=perf_counter()
+        print('OK' if comp.read_compressed_file(adaptive_compressed)==True else 'ERROR')
+        times_encode_static[i].append(round(static_comp_end-static_comp_start,3))
+        times_encode_adaptive[i].append(round(dyn_comp_end-dyn_comp_start,3))
+        times_decode_static[i].append(round(static_read_end-static_read_start,3))
+        times_decode_adaptive[i].append(round(dyn_read_end-dyn_read_start,3))
+        compress_coef_stat[i].append(round((1-getsize(static_compressed)/getsize(raw_text_file))*100,2))
+        compress_coef_adapt[i].append(round((1-getsize(adaptive_compressed)/getsize(raw_text_file))*100,2))
+compress_coef_stat=np.array(compress_coef_stat).T.tolist()
+compress_coef_adapt=np.array(compress_coef_adapt).T.tolist()
+times_decode_static=np.array(times_decode_static).T.tolist()
+times_decode_adaptive=np.array(times_decode_adaptive).T.tolist()
+times_encode_static=np.array(times_encode_static).T.tolist()
+times_encode_adaptive=np.array(times_encode_adaptive).T.tolist()
+compress_coef_stat.insert(0,['random','gutenberg','github'])
+compress_coef_adapt.insert(0,['random','gutenberg','github'])
+times_decode_static.insert(0,['random','gutenberg','github'])
+times_decode_adaptive.insert(0,['random','gutenberg','github'])
+times_encode_static.insert(0,['random','gutenberg','github'])
+times_encode_adaptive.insert(0,['random','gutenberg','github'])
+print('wspolczynniki kompresji algorytmu statycznego')
+print(tabulate(compress_coef_stat,headers='firstrow',showindex=['1kB','10kB','100kB','1MB']))
+print('wspolczynniki kompresji algorytmu adaptacyjnego')
+print(tabulate(compress_coef_adapt,headers='firstrow',showindex=['1kB','10kB','100kB','1MB']))
+print('czas odkodowaniu kodu z algorytmu statycznego')
+print(tabulate(times_decode_static,headers='firstrow',showindex=['1kB','10kB','100kB','1MB']))
+print('czas odkodowaniu kodu z algorytmu adaptacyjnego')
+print(tabulate(times_decode_adaptive,headers='firstrow',showindex=['1kB','10kB','100kB','1MB']))
+print('czas zakodowania algorytmu statycznego')
+print(tabulate(times_encode_static,headers='firstrow',showindex=['1kB','10kB','100kB','1MB']))
+print('czas zakodowania kodu z algorytmu adaptacyjnego')
+print(tabulate(times_encode_adaptive,headers='firstrow',showindex=['1kB','10kB','100kB','1MB']))
