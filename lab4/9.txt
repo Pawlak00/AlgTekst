@@ -1,0 +1,494 @@
+lcs of tokens sequence is:  2124
+length of lines lcs is :  564
+text1.txt  line  3  >  Romeo i Julia
+
+text2.txt  line  3  >  i Julia
+
+text1.txt  line  12  >   * PARYS — młody Weroneńczyk szlachetnego rodu, krewny księcia
+
+text2.txt  line  12  >   * PARYS — młody Weroneńczyk rodu, krewny księcia
+
+text1.txt  line  14  >   * STARZEC — stryjeczny brat Kapuleta
+
+text2.txt  line  14  >   STARZEC — stryjeczny brat Kapuleta
+
+text1.txt  line  16  >   * MERKUCJO krewny księcia
+
+text2.txt  line  16  >   * MERKUCJO — krewny księcia
+
+text1.txt  line  20  >   * JAN brat z tegoż zgromadzenia* BALTAZAR — służący Romea
+
+text2.txt  line  20  >   * JAN — brat z tegoż zgromadzenia
+
+text1.txt  line  22  >   * ABRAHAM — Montekiego
+
+text2.txt  line  22  >   * SAMSON, GRZEGORZ — słudzy Kapuleta
+
+text1.txt  line  23  >   * APTEKARZ
+
+text2.txt  line  23  >   * ABRAHAM — służący Montekiego
+
+text1.txt  line  26  >   PIOTR
+
+text2.txt  line  26  >   * PAŹ PARYSA
+
+text1.txt  line  29  >   * PANI KAPULET — małżonka Kapuleta
+
+text2.txt  line  29  >   * PANI MONTEKI — małżonka Montekiego
+
+text1.txt  line  30  >   * JULIA — córka Kapuletów
+
+text2.txt  line  30  >   PANI KAPULET — małżonka Kapuleta
+
+text1.txt  line  31  >   * — mamka Julii
+
+text2.txt  line  31  >   * JULIA — córka Kapuletów* MARTA — mamka Julii
+
+text1.txt  line  32  >   Obywatele weroneńscy, różne osoby płci liczący się do przyjaciół obu domów, maski, straż wojskowa i inne osoby.
+
+text2.txt  line  32  >   * Obywatele weroneńscy, różne osoby płci obojej, liczący się do obu domów, maski, straż wojskowa i inne osoby.
+
+text1.txt  line  37  >  Rzecz odbywa się przez większą część sztuki w Weronie, przez część piątego aktu w Mantui.
+
+text2.txt  line  37  >  Rzecz odbywa się przez większą część sztuki Weronie, przez część piątego aktu w Mantui.
+
+text1.txt  line  45  >  rody, zacne jednako i sławne —
+
+text2.txt  line  45  >  Dwa rody, zacne jednako i sławne —
+
+text1.txt  line  46  >  Tam, gdzie się rzecz ta rozgrywa, w Weronie,
+
+text2.txt  line  46  >  Tam, gdzie się rzecz ta rozgrywa, w 
+
+text1.txt  line  51  >  Pod najstraszliwszą z gwiazd, kochanków dwoje;
+
+text2.txt  line  51  >  Pod najstraszliwszą z gwiazd, kochanków 
+
+text1.txt  line  52  >  Po pełnym przygód nieszczęśliwych bycie
+
+text2.txt  line  52  >  pełnym przygód bycie
+
+text1.txt  line  53  >  Śmierć ich stłumiła rodzicielskie boje.
+
+text2.txt  line  53  >  Śmierć ich stłumiła boje.
+
+text1.txt  line  55  >  Tej ich miłości przebieg zbyt bolesny
+
+text2.txt  line  55  >  Tej ich przebieg zbyt bolesny
+
+text1.txt  line  71  >  
+
+text2.txt  line  71  >  
+
+text1.txt  line  72  >  / Plac publiczny. Samson i Grzegorz uzbrojeni w tarcze miecze. /
+
+text2.txt  line  72  >  Plac publiczny. Wchodzą Samson Grzegorz uzbrojeni w tarcze i miecze. /
+
+text1.txt  line  85  >  SAMSON
+
+text2.txt  line  85  >  
+
+text1.txt  line  97  >  Mam zwyczaj drapać zaraz, jak mię kto rozrucha.
+
+text2.txt  line  97  >  Mam zwyczaj drapać zaraz, jak mię kto 
+
+text1.txt  line  100  >  GRZEGORZ
+
+text2.txt  line  100  >  
+
+text1.txt  line  102  >  Tak, ale nie zaraz zwykłeś się dać rozruchać.
+
+text2.txt  line  102  >  Tak, ale zaraz zwykłeś się dać rozruchać.
+
+text1.txt  line  108  >  
+
+text2.txt  line  108  >  
+
+text1.txt  line  110  >  GRZEGORZ
+
+text2.txt  line  110  >  GRZEGORZRozruchać się tyle znaczy ruszyć się z miejsca; być walecznym jest to stać nieporuszenie: pojmuję więc, że skutkiem rozruchania się twego będzie - drapnięcie.
+
+text1.txt  line  112  >  Rozruchać się tyle znaczy co ruszyć się z miejsca; być walecznym jest to stać nieporuszenie: pojmuję więc, że skutkiem rozruchania się twego będzie - drapnięcie.
+
+text2.txt  line  112  >  
+
+text1.txt  line  117  >  Te psy z domu Montekich rozruchać mię mogą tylko do stania na miejscu. Będę jak mur dla każdego mężczyzny i każdej kobiety z tego domu.
+
+text2.txt  line  117  >  
+
+text1.txt  line  122  >  To właśnie pokazuje twoją słabą stronę; mur dla nikogo niestraszny i tylko słabi go się trzymają.
+
+text2.txt  line  122  >  
+
+text1.txt  line  127  >  Prawda, dlatego to kobiety, jako najsłabsze, tulą się zawsze do muru. Ja też odtrącę od muru ludzi Montekich, a Montekich przyprę do muru.
+
+text2.txt  line  127  >  
+
+text1.txt  line  132  >  Spór jest tylko między naszymi panami i między nami, ich ludźmi.
+
+text2.txt  line  132  >  
+
+text1.txt  line  147  >  wtłoczę miecz w każdą po kolei. Wiadomo, że się do lwów liczę.
+
+text2.txt  line  147  >  
+
+text1.txt  line  151  >  
+
+text2.txt  line  151  >  
+
+text1.txt  line  152  >  Tym lepiej, że się liczysz do zwierząt; bo gdybyś się liczył do ryb, to byłbyś pewnie sztokfiszem. Weź no się za instrument, bo oto nadchodzi dwóch domowników Montekiego.
+
+text2.txt  line  152  >  
+
+text1.txt  line  154  >  / Wchodzą Abraham i Baltazar. /
+
+text2.txt  line  154  >  
+
+text1.txt  line  159  >  Mój giwer już dobyty: zaczep ich, ja stanę z tyłu.
+
+text2.txt  line  159  >  
+
+text1.txt  line  164  >  Gwoli drapania?SAMSON
+
+text2.txt  line  164  >  
+
+text1.txt  line  171  >  Ja bym miał bać z twojej 
+
+text2.txt  line  171  >  
+
+text1.txt  line  176  >  Miejmy prawo za sobą, niech oni zaczną.
+
+text2.txt  line  176  >  
+
+text1.txt  line  181  >  Marsa nastawię przechodząc; niech go sobie, jak chcą, tłumaczą.
+
+text2.txt  line  181  >  
+
+text1.txt  line  186  >  Nie jak chcą, ale jak śmią. Ja im gębę wykrzywię; hańba im, jeśli to ścierpią.
+
+text2.txt  line  186  >  
+
+text1.txt  line  192  >  
+
+text2.txt  line  192  >  
+
+text1.txt  line  194  >  SAMSON
+
+text2.txt  line  194  >  
+
+text1.txt  line  196  >  Nie inaczej, skrzywiłem się.
+
+text2.txt  line  196  >  ABRAHAM
+
+text1.txt  line  218  >  Nie, mości panie; nie skrzywiłem się na was, tylko skrzywiłem się tak 
+
+text2.txt  line  218  >  GRZEGORZ
+
+text1.txt  line  230  >  Zaczepki? nie.
+
+text2.txt  line  230  >  SAMSON
+
+text1.txt  line  274  >  głupcy; schowajcie miecze do pochew. Sami nie wiecie, co robicie.
+
+text2.txt  line  274  >  
+
+text1.txt  line  276  >  / ich swoim mieczem. /
+
+text2.txt  line  276  >  
+
+text1.txt  line  284  >  Do mnie, Benwolio! pilnuj swego życia.
+
+text2.txt  line  284  >  BENWOLIO
+
+text1.txt  line  300  >  Walczą. Nadchodzi kilku przyjaciół obu partii i mieszają się do zwady; wkrótce potem wchodzą mieszczanie z pałkami. /
+
+text2.txt  line  300  >  PIERWSZY OBYWATEL
+
+text1.txt  line  324  >  Miecz, mówię! Stary nadchodzi.
+
+text2.txt  line  324  >  
+
+text1.txt  line  325  >  I szydnie swoją klingą mi urąga.
+
+text2.txt  line  325  >  
+
+text1.txt  line  339  >  PANI MONTEKI
+
+text2.txt  line  339  >  / Wchodzi Książę z orszakiem. /
+
+text1.txt  line  341  >  puszczę cię na krok, gdy wróg przed tobą.
+
+text2.txt  line  341  >  
+
+text1.txt  line  346  >  KSIĄŻĘZapamiętali niesforni poddani,
+
+text2.txt  line  346  >  Czy nie słyszycie? Ludzie czy zwierzęta,
+
+text1.txt  line  349  >  Co wściekłych swoich gniewów żar gasicie
+
+text2.txt  line  349  >  Z dłoni skrwawionych tę broń buntowniczą
+
+text1.txt  line  350  >  W własnych żył swoich źródle purpurowym;
+
+text2.txt  line  350  >  I posłuchajcie tego, co niniejszym
+
+text1.txt  line  352  >  Z dłoni skrwawionych broń buntowniczą
+
+text2.txt  line  352  >  Domowe starcia, z marnych słów zrodzone
+
+text1.txt  line  354  >  Wasz rozjątrzony książę postanawia.
+
+text2.txt  line  354  >  już spokój miasta zakłóciły,
+
+text1.txt  line  357  >  Trzykroć już spokój miasta zakłóciły,
+
+text2.txt  line  357  >  Porzucić swoje wygodne przybory
+
+text1.txt  line  361  >  I w stare dłonie stare ująć miecze,
+
+text2.txt  line  361  >  Wzniecicie kiedyś waśń podobną,
+
+text1.txt  line  362  >  By ostrzem zardzewiałe
+
+text2.txt  line  362  >  Zamęt pokoju opłacicie życiem.
+
+text1.txt  line  365  >  Zamęt pokoju opłacicie życiem.A teraz wszyscy ustąpcie niezwłocznie.
+
+text2.txt  line  365  >  Ty zaś, Monteki, przyjdziesz po południu
+
+text1.txt  line  366  >  Ty, Kapulecie, pójdziesz ze razem;
+
+text2.txt  line  366  >  Na ratusz, gdzie ci dokładnie w tym względzie
+
+text1.txt  line  369  >  ma wola oznajmiona będzie.
+
+text2.txt  line  369  >  Pod karą śmierci, aby się rozeszli.
+
+text1.txt  line  371  >  karą śmierci, aby się rozeszli.
+
+text2.txt  line  371  >  / Książę z orszakiem wychodzi. Podobnież Kapulet, Pani Kapulet, Tybalt, obywatele i słudzy. /
+
+text1.txt  line  373  >  / orszakiem wychodzi. Podobnież Pani Kapulet, Tybalt, obywatele słudzy. /
+
+text2.txt  line  373  >  
+
+text1.txt  line  379  >  Był tu wtedy, gdy się to zaczęło?
+
+text2.txt  line  379  >  
+
+text1.txt  line  385  >  wasi już się bili, kiedym nadszedł;
+
+text2.txt  line  385  >  Wtem wpadł szalony Tybalt z gołym mieczem,
+
+text1.txt  line  386  >  Dobyłem broni, aby ich rozdzielić:Wtem wpadł szalony Tybalt z gołym mieczem,
+
+text2.txt  line  386  >  I harde zionąc mi uszy wyzwanie,
+
+text1.txt  line  387  >  I harde zionąc mi w uszy wyzwanie,
+
+text2.txt  line  387  >  Jął się wywijać nim i siec powietrze,
+
+text1.txt  line  390  >  Jego zamachów. Gdyśmy tak ze 
+
+text2.txt  line  390  >  Cięcia i pchnięcia zamieniali, zbiegł się
+
+text1.txt  line  396  >  MONTEKI
+
+text2.txt  line  396  >  
+
+text1.txt  line  402  >  BENWOLIO
+
+text2.txt  line  402  >  
+
+text1.txt  line  411  >  on, spostrzegłszy mię, skrył się natychmiast
+
+text2.txt  line  411  >  I w najciemniejszej ukrył się gęstwinie.
+
+text1.txt  line  415  >  Jest najczynniejsze, kiedyśmy samotni),
+
+text2.txt  line  415  >  I w inną stronę się udałem, chętnie
+
+text1.txt  line  416  >  Nie przeszkadzałem mu w jego dumaniach
+
+text2.txt  line  416  >  Stroniąc od tego, co rad mnie unikał.
+
+text1.txt  line  431  >  Zasłaniał okna przed jasnym dnia blaskiemI sztuczną sobie ciemnicę utwarzał.
+
+text2.txt  line  431  >  W czarne dusza jego zajdzie,
+
+text1.txt  line  432  >  W czarne bezdroża dusza jego zajdzie,
+
+text2.txt  line  432  >  Jeśli się na to lekarstwo nie znajdzie.
+
+text1.txt  line  454  >  on jedyny powiernik swych smutków.
+
+text2.txt  line  454  >  Tak im jest wierny, tak zamknięty w sobie,
+
+text1.txt  line  457  >  Jak kwiatu, co go robak gryzie,
+
+text2.txt  line  457  >  Nim światu wonny swój kielich roztoczył
+
+text1.txt  line  460  >  Gdybyśmy mogli tych trosk zarodka,
+
+text2.txt  line  460  >  Nie zbrakłoby nam zaradczego środka.
+
+text1.txt  line  463  >  / ukazuje się w /
+
+text2.txt  line  463  >  
+
+text1.txt  line  469  >  Wyrwę mu z piersi tajone.
+
+text2.txt  line  469  >  
+
+text1.txt  line  474  >  Obyś w tej sprawie, co nam serce rani,
+
+text2.txt  line  474  >  Mógł być szczęśliwszym od nas! Pójdźmy, pani.
+
+text1.txt  line  492  >  Dziewiąta biła dopiero.
+
+text2.txt  line  492  >  
+
+text1.txt  line  498  >  Wloką się chwile. Moi–ż to 
+
+text2.txt  line  498  >  Tak spiesznie w tamtą zboczyli ulicę?
+
+text1.txt  line  499  >  Tak w tamtą zboczyli ulicę?
+
+text2.txt  line  499  >  
+
+text1.txt  line  517  >  ROMEO
+
+text2.txt  line  517  >  
+
+text1.txt  line  524  >                          Jak to? brak miłości?ROMEO
+
+text2.txt  line  524  >  
+
+text1.txt  line  526  >  Brak jej skąd bym pragnął wzajemności.
+
+text2.txt  line  526  >  ROMEO
+
+text1.txt  line  537  >  Niestety! Czemuż, z zasłoną na skroni,
+
+text2.txt  line  537  >  ROMEO
+
+text1.txt  line  539  >  Gdzież jeść będziem? Ach! Był tu podobno
+
+text2.txt  line  539  >  Niestety! Czemuż, z na skroni,
+
+text1.txt  line  540  >  Jakiś spór? Nie mów mi o nim, wiem wszystko.
+
+text2.txt  line  540  >  Miłość na oślep zawsze cel swój goni!
+
+text1.txt  line  543  >  Szorstka miłości! nienawiści tkliwa!
+
+text2.txt  line  543  >  W grze tu nienawiść wielka, lecz i miłość.
+
+text1.txt  line  546  >  Szpetny chaosie wdzięków! Ciężki puchu!
+
+text2.txt  line  546  >  Coś narodzone z niczego! Pieszczoto
+
+text1.txt  line  548  >  Śnie bez snu! Taką w sobie zawiłość,
+
+text2.txt  line  548  >  Szpetny chaosie wdzięków! Ciężki 
+
+text1.txt  line  571  >                          A więc strzała
+
+text2.txt  line  571  >  ROMEO
+
+text1.txt  line  573  >  Dość mi już ciężył mój smutek, jego
+
+text2.txt  line  573  >                          A 
+
+text1.txt  line  579  >  To żar, co w oku szczęśliwego płonie;
+
+text2.txt  line  579  >  Dla mego serca. Miłość, przyjacielu,
+
+text1.txt  line  583  >  zdrów.
+
+text2.txt  line  583  >  Czymże jest więcej? Istnym amalgamem,
+
+text1.txt  line  585  >  / chce odejść /
+
+text2.txt  line  585  >  Bądź zdrów.
+
+text1.txt  line  596  >  ja nie jestem tu, nie jestem sobą;
+
+text2.txt  line  596  >  ROMEO
+
+text1.txt  line  602  >  Kogóż to mów!
+
+text2.txt  line  602  >  BENWOLIO
+
+text1.txt  line  608  >  Mam–że wraz jęczyć mówić?
+
+text2.txt  line  608  >  
+
+text1.txt  line  620  >                          Każ 
+
+text2.txt  line  620  >  ROMEO
+
+text1.txt  line  622  >  Dobre dla tego, kto jest w tak stanie?
+
+text2.txt  line  622  >                          Każ choremu
+
+text1.txt  line  629  >  Gdym to pomyślał, nimeś mi powierzył.
+
+text2.txt  line  629  >  
+
+text1.txt  line  634  >  Biegle celujesz. I ta, którą kocham,
+
+text2.txt  line  634  >  ROMEO
+
+text1.txt  line  635  >  Jest piękna.
+
+text2.txt  line  635  >  
+
+text1.txt  line  645  >  A właśnieś chybił. Niczym tu kołczany
+
+text2.txt  line  645  >  
+
+text1.txt  line  647  >  twardą zbroją wstydliwości swojej
+
+text2.txt  line  647  >  Kupida; ona ma naturę Diany;
+
+text1.txt  line  650  >  Odpiera spojrzeń napastniczych;
+
+text2.txt  line  650  >  Szydzi z nawału zaklęć oblężniczych;
+
+text1.txt  line  653  >  Że kiedy umrze, do grobu z zstąpi
+
+text2.txt  line  653  >  Bogata w wdzięki, w tym jedynie biedna,
+
+text1.txt  line  658  >  
+
+text2.txt  line  658  >  BENWOLIO
+
+text1.txt  line  659  >  Wiecznie–ż chce z swym bogactwem?
+
+text2.txt  line  659  >  
+
+text1.txt  line  660  >  
+
+text2.txt  line  660  >  Wiecznie–ż chce sama zostać z swym bogactwem?ROMEO
+
+text1.txt  line  662  >  ROMEO
+
+text2.txt  line  662  >  Tak jest; i skąpstwo to jest marnotrawstwem,
+
+text1.txt  line  667  >  Zbyt ona piękna, zbyt mądra zarazem;
+
+text2.txt  line  667  >  Przysięgła nigdy nie kochać i dzięki
+
+text1.txt  line  675  >  Jest na to rada: przestań o niej.
+
+text2.txt  line  675  >  
+
+text1.txt  line  678  >  ROMEO
+
+text2.txt  line  678  >  Doradź–że także, jakim sposobem
+
+text1.txt  line  680  >  Doradź–że także, jakim bym sposobem
+
+text2.txt  line  680  >  
+

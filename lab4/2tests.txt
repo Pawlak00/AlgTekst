@@ -1,0 +1,49 @@
+#######################################
+t1 los
+t2 kloc
++x+ - symbol x added 
+/x/ - previous symbol changed to x
+- - symbol removed 
+klo/s/
+-los
+OK
+OK
+#######################################
+t1 Łódź
+t2 Lodz
++x+ - symbol x added 
+/x/ - previous symbol changed to x
+- - symbol removed 
+Lod/ź/
+L/ó/dź
+/Ł/ódź
+OK
+OK
+#######################################
+t1 kwintesencja
+t2 quintessence
++x+ - symbol x added 
+/x/ - previous symbol changed to x
+- - symbol removed 
+quintessenc/a/
+quintessenc+j+ja
+quintes-encja
+q/w/intesencja
+/k/wintesencja
+OK
+OK
+#######################################
+t1 ATGAATCTTACCGCCTCG
+t2 ATGAGGCTCTGGCCCCTG
++x+ - symbol x added 
+/x/ - previous symbol changed to x
+- - symbol removed 
+ATGAGGCTCTGGCCCCT+C+CG
+ATGAGGCTCTGGC/G/CCTCG
+ATGAGGCTCTG/C/CGCCTCG
+ATGAGGCTCT/A/CCGCCTCG
+ATGAGGCT-TACCGCCTCG
+ATGAG/T/CTTACCGCCTCG
+ATGA/A/TCTTACCGCCTCG
+OK
+OK
